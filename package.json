@@ -1,0 +1,24 @@
+{
+  "name": "budget-node",
+  "version": "1.0.0",
+  "description": "A budgetting app made with Node.js",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Edmil Di Massimo",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "graphql-yoga": "^1.18.3",
+    "winston": "^3.2.1"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "eslint": "^6.7.1",
+    "eslint-config-google": "^0.14.0",
+    "mocha": "^6.2.2",
+    "nodemon": "^2.0.1"
+  }
+}
