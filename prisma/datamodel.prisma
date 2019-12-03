@@ -1,0 +1,24 @@
+type User {
+  id: ID! @id
+  username: String!
+  password: String!
+  expenses: [Expense]
+  income: [Income]
+}
+
+type Expense {
+  id: ID! @id
+  user: User!
+  amount: Float!
+  type: String!
+  description: String
+  date: String!
+}
+
+type Income {
+  id: ID! @id
+  user: User!
+  amount: Float!
+  description: String
+  date: String!
+}

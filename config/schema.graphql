@@ -1,0 +1,36 @@
+type Query {
+  users: [User]
+  expenses: [Expense]
+  incomes: [Income]
+}
+
+type Mutation{
+  postUser(username: String!, password: String!): User!
+  postExpense(user: ID, amount: Float!, type: String!,  description: String): Expense!
+  postIncome(user: ID, amount: Float!, description: String): Income!
+}
+
+type User {
+  id: ID!
+  username: String!
+  password: String!
+  expenses: [Expense]
+  income: [Income]
+}
+
+type Expense {
+  id: ID!
+  user: User!
+  amount: Float!
+  type: String!
+  description: String
+  date: String!
+}
+
+type Income {
+  id: ID!
+  user: User!
+  amount: Float!
+  description: String
+  date: String!
+}
