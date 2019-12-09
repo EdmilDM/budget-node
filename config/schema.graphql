@@ -5,9 +5,10 @@ type Query {
 }
 
 type Mutation{
-  postUser(username: String!, password: String!): User!
-  postExpense(user: ID, amount: Float!, type: String!,  description: String): Expense!
-  postIncome(user: ID, amount: Float!, description: String): Income!
+  postExpense(amount: Float!, type: String!,  description: String): Expense!
+  postIncome(amount: Float!, description: String): Income!
+  signup(username: String!, password: String!): AuthPayload
+  login(username: String!, password: String!): AuthPayload
 }
 
 type User {
@@ -33,4 +34,9 @@ type Income {
   amount: Float!
   description: String
   date: String!
+}
+
+type AuthPayload {
+  token: String
+  user: User
 }

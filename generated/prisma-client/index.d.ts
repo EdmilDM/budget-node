@@ -403,6 +403,7 @@ export type IncomeWhereUniqueInput = AtLeastOne<{
 
 export type UserWhereUniqueInput = AtLeastOne<{
   id: Maybe<ID_Input>;
+  username?: Maybe<String>;
 }>;
 
 export interface ExpenseCreateInput {
