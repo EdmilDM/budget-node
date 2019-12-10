@@ -3,6 +3,8 @@ A budgeting app backend made with Node.js and Yoga.
 
 Deployment with heroku: https://infinite-bayou-49937.herokuapp.com/
 
+Can create, delete and get a list of all users, incomes and expenses. Besides signup and login, must send a header called Authorization with format "Token generatedJWT", generated JWT is returned when you login or signup.
+
 ## Installation
 
 This project uses prisma, so you must have a prisma account, remove the endpoint variable's content in prisma/prisma.yml, after that run the command prisma deploy on the folder root. Also must have yarn installed locally, or npm.
