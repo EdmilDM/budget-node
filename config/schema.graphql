@@ -7,6 +7,9 @@ type Query {
 type Mutation{
   postExpense(amount: Float!, type: String!,  description: String): Expense!
   postIncome(amount: Float!, description: String): Income!
+  deleteUser(id: ID): User!
+  deleteExpense(id: ID): Expense!
+  deleteIncome(id: ID): Income!
   signup(username: String!, password: String!): AuthPayload
   login(username: String!, password: String!): AuthPayload
 }
