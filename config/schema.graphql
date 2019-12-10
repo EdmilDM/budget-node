@@ -1,7 +1,7 @@
 type Query {
   users: [User]
-  expenses: [Expense]
-  incomes: [Income]
+  expenses(filter: ID): [Expense]
+  incomes(filter: ID): [Income]
 }
 
 type Mutation{
